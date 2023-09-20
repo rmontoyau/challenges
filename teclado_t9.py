@@ -9,8 +9,8 @@ representación con letras.
 - Cada bloque de pulsaciones va separado por un guión.
 - Si un bloque tiene más de un número, debe ser siempre el mismo.
 - Ejemplo:
-    Entrada: 6-666-88-777-33-3-33-888
-    Salida: MOUREDEV
+    Entrada: 777-88-3-999-0-6-666-66-8-666-999-2
+    Salida: RUDY MONTOYA
 '''
 
 T9 = {"2" : "ABC",
