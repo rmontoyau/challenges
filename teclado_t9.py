@@ -36,4 +36,4 @@ def teclado(word):
         out += decode(item)
     return out
 
-print(teclado("777-88-3-999"))
+print(teclado("777-88-3-999-0-6-666-66-8-666-999-2"))
