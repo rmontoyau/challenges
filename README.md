@@ -95,3 +95,23 @@ Mapa de datos
 Acorde al desplazamiento se moveran hacia adelante para obtener el caracter que corresponda, si el caracter se sale del arreglo, e iniciará de nuevo ie: si es deplazamiento de 3 y se seleccionala **Z** el resultado seria **C**.
 Para decodificar se realiza el paso a la inverza en lugar de sumar el desplazamiento, este se le resta, para obtener el mensaje.
 Ver solución [aquí](/challenges/clave_cesar.py)
+
+## Reto Numeros primos gemelos
+Crea un programa que encuentre y muestre todos los pares de números primos gemelos en un rango concreto.
+El programa recibirá el rango máximo como número entero positivo.
+   - Un par de números primos se considera gemelo si la diferencia entre
+    ellos es exactamente 2. Por ejemplo (3, 5), (11, 13)
+ 
+  - Ejemplo: Rango 14
+    (3, 5), (5, 7), (11, 13)
+
+### Solución
+se creo una función para determinar si un numero es primo.
+Un numero N es primo únicamente si es divisible entre 2 y el mismo, para calcular esto
+- si el numero es 1 o 2 se retorna que es primo
+- para los numeros mayores a dos, se comprueban todos los numeros entre 2 y la Raiz cuadrada de N, ie si el N = 17 su raiz cuadrada 4,12. Solo se toma el 4
+- se divide 17 entre los valores dentro del rango de 2 a 4, es decir 2,3,4, si no es divisible entre ellos, se considera número primo
+#### es gemelo?
+para esto se almacena el último numero primo encontrado y se compara con el siguiente, se realiza la resta para verificar que el resultado sea 2
+
+Ver solución [aqui](/challenges/numeros_primos_gemelos.py)
