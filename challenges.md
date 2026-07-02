@@ -6,7 +6,6 @@ Contiuación
 El reto consiste en crear un programa que sea capaz de generar e imprimir todas las permutaciones disponibles formadas por las letras de una palabra.
 - Las palabras generadas no tienen por qué existir.
 - Deben usarse todas las letras en cada permutación.
-- Ejemplo: sol, slo, ols, osl, los, lso 
 
 ### solución
 Ee crea un metodo recursivo donde se optienen todas las combinaciones posibles apartir de 3 caracteres
@@ -20,7 +19,7 @@ al retornar agrega el siguente elemento a la lista creando nueas secuencias
 > **['abcd', 'abdc', 'acbd', 'adbc', 'acdb', 'adcb', 'bacd', 'badc', 'cabd', 'dabc', 'cadb', 'dacb', 'bcad', 'bdac', 'cbad', > 'dbac', 'cdab', 'dcab', 'bcda', 'bdca', 'cbda', 'dbca', 'cdba', 'dcba']**
 > asi con cualquier arreglo.
 
-Ver solución [aquí](/challenges/permutations.py)
+Ver solución [aquí](/src/permutations.py)
 
 ## Reto abaco
 Crea una función que sea capaz de leer el número representado por el ábaco.
@@ -50,7 +49,7 @@ luego se eso se cuentan las el largo del string para obtener el numero que le co
 
 El siguiente paso es crear un loop que recorra el arreglo y obtenga el valor correspondiente a cada item para asi obtener el resultado total.
 
-Ver código [aqui](/challenges/abaco.py)
+Ver código [aqui](/src/abaco.py)
 
 ## Reto Teclado T9
 Los primeros dispositivos móviles tenían un teclado llamado T9 con el que se podía escribir texto utilizando únicamente su teclado numérico (del 0 al 9).
@@ -78,7 +77,7 @@ Se creo una lista para mapear cada la combinación de del teclado
 Mediante esta lista se obtiene el valor buscado segun la cantidad de numeros indicados, si se dan **777** se cuenta la cantidad de numeros y se retorna la 3ra posición del arreglo correspondiente a **7** que corresponde a **R**.
 De esta forma se recorre cada combinación de numeros. hasta lograr decifrar toda la pablabra.
 
-Ver solución [aqui](/challenges/teclado_t9.py)
+Ver solución [aqui](/src/teclado_t9.py)
 
  ## Reto Clave Cesar
  Crea un programa que realize el cifrado César de un texto y lo imprima. 
@@ -94,4 +93,4 @@ Mapa de datos
 
 Acorde al desplazamiento se moveran hacia adelante para obtener el caracter que corresponda, si el caracter se sale del arreglo, e iniciará de nuevo ie: si es deplazamiento de 3 y se seleccionala **Z** el resultado seria **C**.
 Para decodificar se realiza el paso a la inverza en lugar de sumar el desplazamiento, este se le resta, para obtener el mensaje.
-Ver solución [aquí](/challenges/clave_cesar.py)
+Ver solución [aquí](/src/clave_cesar.py)
